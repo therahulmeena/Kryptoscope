@@ -1,5 +1,28 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'kryptoscope'
+
+    publishedGroupId = 'com.therahulmeena.kryptoscope'
+    libraryName = 'Kryptoscope'
+    artifact = 'kryptoscope'
+
+    libraryDescription = 'A wrapper for Facebook Stetho to view encrypted (SQLCipher) database of Android Project.'
+
+    siteUrl = 'https://github.com/therahulmeena/kryptoscope'
+    gitUrl = 'https://github.com/therahulmeena/kryptoscope.git'
+
+    libraryVersion = '1.0'
+
+    developerId = 'therahulmeena'
+    developerName = 'Rahul Meena'
+    developerEmail = 'rahul184.iitr@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 android {
     compileSdkVersion 22
     buildToolsVersion "22.0.1"
@@ -31,4 +54,10 @@ dependencies {
     compile 'net.zetetic:android-database-sqlcipher:3.5.7@aar'
 }
 
+tasks.withType(Javadoc) {
+    options.addBooleanOption('Xdoclint:none', true)
+}
+
 apply from: rootProject.file('build.gradle')
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

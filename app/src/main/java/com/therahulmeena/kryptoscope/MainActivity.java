@@ -28,5 +28,6 @@ public class MainActivity extends AppCompatActivity {
         database.execSQL("create table t1(a, b)");
         database.execSQL("insert into t1(a, b) values(?, ?)", new Object[]{"one for the money",
                 "two for the show"});
+        database.close();
     }
 }
