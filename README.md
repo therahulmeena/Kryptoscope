@@ -10,14 +10,14 @@ begin.
 ### Download
 Gradle:
 ```groovy
-compile 'com.therahulmeena.kryptoscope:kryptoscope:1.0'
+compile 'com.therahulmeena.kryptoscope:kryptoscope:1.1'
 ```
 or Maven:
 ```xml
 <dependency>
   <groupId>com.therahulmeena.kryptoscope</groupId>
   <artifactId>kryptoscope</artifactId>
-  <version>1.0</version>
+  <version>1.1</version>
   <type>pom</type>
 </dependency>
 ```
