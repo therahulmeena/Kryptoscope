@@ -8,12 +8,12 @@ ext {
     libraryName = 'Kryptoscope'
     artifact = 'kryptoscope'
 
-    libraryDescription = 'A wrapper for Facebook Stetho to view encrypted (SQLCipher) database of Android Project.'
+    libraryDescription = 'A wrapper based on Facebook Stetho to view encrypted (SQLCipher) database of Android Project.'
 
     siteUrl = 'https://github.com/therahulmeena/kryptoscope'
     gitUrl = 'https://github.com/therahulmeena/kryptoscope.git'
 
-    libraryVersion = '1.0'
+    libraryVersion = '1.1'
 
     developerId = 'therahulmeena'
     developerName = 'Rahul Meena'
