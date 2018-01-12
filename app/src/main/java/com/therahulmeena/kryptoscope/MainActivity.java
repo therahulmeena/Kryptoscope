@@ -1,9 +1,9 @@
 package com.therahulmeena.kryptoscope;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import com.facebook.stetho.Stetho;
+import com.facebook.stetho.Kryptoscope;
 
 import net.sqlcipher.database.SQLiteDatabase;
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         InitializeSQLCipher();
-        Stetho.initializeWithDefaults(this,"test123");
+        Kryptoscope.initializeWithDefaults(this,"test123");
     }
 
     private void InitializeSQLCipher() {
