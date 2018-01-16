@@ -10,20 +10,12 @@ begin.
 ### Download
 Gradle:
 
-Edit project level build.gradle
-```groovy
-allprojects {
-    repositories {
-        maven {
-            url 'https://dl.bintray.com/therahulmeena/maven/'
-        }
-    }
-}
-```
-
 Edit app/build.gradle
 ```groovy
-compile 'com.therahulmeena.kryptoscope:kryptoscope:1.1'
+
+dependencies {
+    compile 'com.therahulmeena.kryptoscope:kryptoscope:1.1'
+}
 ```
 or Maven:
 ```xml
