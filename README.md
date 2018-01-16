@@ -1,5 +1,5 @@
 # Kryptoscope
-A wrapper based on Facebook Stetho to view encrypted (SQLCipher) database of Android Project.
+A wrapper based on [Facebook Stetho](http://facebook.github.io/stetho/#fb_hhvm) to view encrypted (SQLCipher) database of Android Project.
 
 Once you complete the set-up instructions below, just start your app and point
 your laptop browser to `chrome://inspect`.  Click the "Inspect" button to
